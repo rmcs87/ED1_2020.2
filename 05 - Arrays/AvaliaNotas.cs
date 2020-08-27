@@ -15,6 +15,7 @@ public class AvaliaNotas
     {
         for (int i = 0; i < notas.Length; i++)
         {
+            Console.WriteLine($"Digite a {i+1} nota: ");
             notas[i] = Convert.ToSingle(Console.ReadLine());
         }        
     }
@@ -27,7 +28,7 @@ public class AvaliaNotas
         }
         media = soma / notas.Length;
     }
-    public void MostraNostas()
+    public void MostraNotas()
     {
         for (int i = 0; i < notas.Length; i++)
         {

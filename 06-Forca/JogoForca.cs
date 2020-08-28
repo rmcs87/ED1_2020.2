@@ -62,6 +62,17 @@ public class JogoForca
     }
     public void ExibirStatusDoJogo()
     {
+        Console.WriteLine("Chutes Certos");
+        for (int i = 0; i < chutesCertos.Count; i++)
+        {
+            Console.Write(chutesCertos[i] + " ");
+        }
+        Console.WriteLine("Chutes Errados");
+        for (int i = 0; i < chutesErrados.Count; i++)
+        {
+            Console.Write(chutesErrados[i] + " ");
+        }
+        Console.WriteLine($"Você ainda tem: {maxErros - chutesCertos.Count - chutesErrados.Count} chutes");
 
     }
 }

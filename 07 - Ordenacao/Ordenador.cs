@@ -59,7 +59,7 @@ public class Ordenador
             int aux = vetor[i];
             int indice = i;
             while (indice > 0 
-                && vetor[indice] < vetor[indice - 1])
+                && aux < vetor[indice - 1])
             {
                 vetor[indice] = vetor[indice - 1];
                 indice--;

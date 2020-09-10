@@ -21,4 +21,16 @@ public class LinkedList
 		newNode.next = head;
 		head = newNode;		
 	}
+
+	public void PrintList()
+	{
+		var aux = head;
+
+		while (aux != null)
+		{
+			Console.Write($"-> [{aux.data}]");
+			aux = aux.next;
+		}
+		Console.Write("-> [end]");
+	}
 }

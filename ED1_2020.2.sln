@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05 - Arrays", "05 - Arrays\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06-Forca", "06-Forca\06-Forca.csproj", "{C2417DDE-B2B3-44B2-88C1-65D0E679AECD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07 - Ordenacao", "07 - Ordenacao\07 - Ordenacao.csproj", "{D1932282-40E1-47A8-82EF-4198EE78B75D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07 - Ordenacao", "07 - Ordenacao\07 - Ordenacao.csproj", "{D1932282-40E1-47A8-82EF-4198EE78B75D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08 - ListaOrdenada", "08 - ListaOrdenada\08 - ListaOrdenada.csproj", "{12258E60-08F8-4168-83FE-2E75C49D561C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{D1932282-40E1-47A8-82EF-4198EE78B75D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1932282-40E1-47A8-82EF-4198EE78B75D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1932282-40E1-47A8-82EF-4198EE78B75D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12258E60-08F8-4168-83FE-2E75C49D561C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12258E60-08F8-4168-83FE-2E75C49D561C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12258E60-08F8-4168-83FE-2E75C49D561C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12258E60-08F8-4168-83FE-2E75C49D561C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-public class Node
+﻿public class Node
 {
     public int data;
     public Node next;

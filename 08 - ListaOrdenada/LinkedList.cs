@@ -11,17 +11,25 @@ public class LinkedList
 	{
 		head = null;
 	}
-
-	/// <summary>
-	/// Add at first position.
-	/// </summary>
 	public void Add(int valor)
 	{
 		var newNode = new Node(valor);
 		newNode.next = head;
 		head = newNode;		
 	}
-
+	public Node Find(int valor)
+	{
+		Node aux = head;
+		while ( (aux != null) && (aux.data != valor))
+		{
+			aux = aux.next;
+		}
+		return aux;
+	}
+	public bool IsEmpty()
+	{
+		return (head == null);
+	}
 	public void Print()
 	{
 		Console.Write("[HEAD]");

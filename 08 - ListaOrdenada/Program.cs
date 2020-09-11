@@ -11,7 +11,10 @@ class Program
         lista.Add(14);
         lista.Add(99999);
 
-        lista.Print();
+        Console.WriteLine(lista.Find(55));
+
+        Console.WriteLine();
+        Console.WriteLine();
     }
 }
 

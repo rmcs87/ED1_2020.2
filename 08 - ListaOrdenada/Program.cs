@@ -5,13 +5,13 @@ class Program
     static void Main(string[] args)
     {
         LinkedList lista = new LinkedList();
-        lista.Add(10);
-        lista.Add(1);
-        lista.Add(5);
-        lista.Add(14);
-        lista.Add(99999);
+        lista.AddOrdered(10);
+        lista.AddOrdered(1);
+        lista.AddOrdered(5);
+        lista.AddOrdered(14);
+        lista.AddOrdered(99999);
 
-        Console.WriteLine(lista.Find(55));
+        lista.Print();
 
         Console.WriteLine();
         Console.WriteLine();

@@ -17,6 +17,24 @@ public class LinkedList
         newNode.next = head;
         head = newNode;
     }
+    public void AddOrdered(int valor)
+    {
+        var newNode = new Node(valor);
+        Node aux = head;
+        //Trata lista vazia e inserir o menor valor da lista
+        if (head == null || valor < head.data)
+        {
+            newNode.next = head;
+            head = newNode;
+            return;
+        }
+        while ((aux.next != null)&&(valor > aux.next.data))
+        {
+            aux = aux.next;
+        }        
+        newNode.next = aux.next;
+        aux.next = newNode;
+    }
     public Node Find(int valor)
     {
         Node aux = head;
@@ -55,14 +73,14 @@ public class LinkedList
             ant = aux;
             aux = aux.next;
         }
-        if (ant == null) //remover primeiro no
+        if (ant == null) //remover primeiro NÓ
         {
             head = aux.next;
         }
-        else
+        else //Qualquer outro caso
         {
             ant.next = aux.next;
         }
-        //free by GC
+        //no é removido da MEM. by GC
     }
 }

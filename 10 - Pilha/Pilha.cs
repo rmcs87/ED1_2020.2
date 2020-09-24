@@ -8,7 +8,9 @@
 	}
 	public void Push(int valor)
 	{
-		//Inserir no topo da pilha
+		Node novo = new Node(valor);
+		novo.next = top;
+		top = novo;
 	}
 	public int Pop()
 	{

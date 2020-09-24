@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07 - Ordenacao", "07 - Orde
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08 - ListaOrdenada", "08 - ListaOrdenada\08 - ListaOrdenada.csproj", "{12258E60-08F8-4168-83FE-2E75C49D561C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09 - ListaCircular", "09 - ListaCircular\09 - ListaCircular.csproj", "{66D46845-D8CB-4ADA-9646-958F20FA5049}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09 - ListaCircular", "09 - ListaCircular\09 - ListaCircular.csproj", "{66D46845-D8CB-4ADA-9646-958F20FA5049}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10 - Pilha", "10 - Pilha\10 - Pilha.csproj", "{7B00244D-0949-488D-9B5D-3345424B4CAE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{66D46845-D8CB-4ADA-9646-958F20FA5049}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66D46845-D8CB-4ADA-9646-958F20FA5049}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66D46845-D8CB-4ADA-9646-958F20FA5049}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B00244D-0949-488D-9B5D-3345424B4CAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B00244D-0949-488D-9B5D-3345424B4CAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B00244D-0949-488D-9B5D-3345424B4CAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B00244D-0949-488D-9B5D-3345424B4CAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

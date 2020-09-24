@@ -14,7 +14,12 @@
 	}
 	public int Pop()
 	{
-		//remove do topo e retorna o valor
+		if (Empty())
+			return -1;
+
+		Node aux = top;
+		top = top.next;
+		return aux.data;
 	}
 	public bool Empty()
 	{

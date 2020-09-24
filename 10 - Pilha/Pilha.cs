@@ -1,9 +1,10 @@
 ﻿public class Pilha
 {
+	private Node top;
 	//Construtor
 	public Pilha()
 	{
-		//2do: Alocar a nossa pilha (TOP -> null)
+		top = null;
 	}
 	public void Push(int valor)
 	{
@@ -15,7 +16,7 @@
 	}
 	public bool Empty()
 	{
-		//retorna se a pilha é vazia
+		return top == null;
 	}
 	public void Clear()
 	{

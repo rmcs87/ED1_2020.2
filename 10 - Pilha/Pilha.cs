@@ -27,7 +27,10 @@
 	}
 	public void Clear()
 	{
-		//Remove todo da Pilha
+		while (!Empty())
+		{
+			Pop();
+		}
 	}
 	public int Count()
 	{

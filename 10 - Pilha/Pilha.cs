@@ -41,6 +41,12 @@
 			Pop();
 		}
 	}
-	
+	public int Peek()	//Top
+	{
+		if (Empty())
+			return -1;
+
+		return top.data;
+	}
 }
 

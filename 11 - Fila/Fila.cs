@@ -28,7 +28,20 @@ public class Fila
         }
     }
     public Pessoa Remove()
-    {//Remove da fila
+    {
+        Pessoa p = null;
+        if (filaInicio == filaFim)
+        {//Fila com um elemento
+            p = filaInicio.data;
+            filaInicio = null;
+            filaFim = null;
+        }
+        else if (!IsEmpty())
+        {//Caso normal (varios elementos)
+            p = filaInicio.data;
+            filaInicio = filaInicio.next;            
+        }
+        return p;
     }
     public bool IsEmpty()
     {

@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08 - ListaOrdenada", "08 - 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09 - ListaCircular", "09 - ListaCircular\09 - ListaCircular.csproj", "{66D46845-D8CB-4ADA-9646-958F20FA5049}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10 - Pilha", "10 - Pilha\10 - Pilha.csproj", "{7B00244D-0949-488D-9B5D-3345424B4CAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10 - Pilha", "10 - Pilha\10 - Pilha.csproj", "{7B00244D-0949-488D-9B5D-3345424B4CAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11 - Fila", "11 - Fila\11 - Fila.csproj", "{81DF6888-AA31-4057-A944-5B1145B27F1F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{7B00244D-0949-488D-9B5D-3345424B4CAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B00244D-0949-488D-9B5D-3345424B4CAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B00244D-0949-488D-9B5D-3345424B4CAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81DF6888-AA31-4057-A944-5B1145B27F1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81DF6888-AA31-4057-A944-5B1145B27F1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81DF6888-AA31-4057-A944-5B1145B27F1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81DF6888-AA31-4057-A944-5B1145B27F1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -26,6 +26,7 @@ public class Fila
             filaFim.next = novo;
             filaFim = novo;
         }
+        contador++;
     }
     public Pessoa Remove()
     {
@@ -35,12 +36,14 @@ public class Fila
             p = filaInicio.data;
             filaInicio = null;
             filaFim = null;
+            contador--;
         }
         else if (!IsEmpty())
         {//Caso normal (varios elementos)
             p = filaInicio.data;
-            filaInicio = filaInicio.next;            
-        }
+            filaInicio = filaInicio.next;
+            contador--;
+        }        
         return p;
     }
     public bool IsEmpty()
@@ -48,10 +51,15 @@ public class Fila
         return filaInicio == null;
     }
     public void Clear()
-    {//Esvazia a fila
+    {
+        while (!IsEmpty())
+        {
+            Remove();
+        }
     }
     public int Count()
-    {//Retorna quantos temos na fila;
+    {
+        return contador;
     }
 }
 

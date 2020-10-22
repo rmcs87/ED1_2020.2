@@ -19,5 +19,6 @@
 	public bool Pertence(int x) 
 	{}
 	public void Print()
-	{ }
+	{ 
+	}
 }

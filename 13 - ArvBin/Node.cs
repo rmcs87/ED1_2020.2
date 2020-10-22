@@ -19,24 +19,61 @@ public class Node
         SAE = esq;
         SAD = dir;
     }
-    public void Print()
+    public void PrintPreOrdem()
     {
         Console.Write("<");
         Console.Write(data);
         if (SAE != null)
-            SAE.Print();
+            SAE.PrintPreOrdem();
         else
             Console.Write("<>");
 
         if (SAD != null)
-            SAD.Print();
+            SAD.PrintPreOrdem();
         else
             Console.Write("<>");
 
         Console.Write(">");
     }
-    public bool Pertence(int x)
+
+    public void PrintIrOrdem()
     {
+        Console.Write("<");        
+        if (SAE != null)
+            SAE.PrintIrOrdem();
+        else
+            Console.Write("<>");
+
+        Console.Write(data);
+
+        if (SAD != null)
+            SAD.PrintIrOrdem();
+        else
+            Console.Write("<>");
+
+        Console.Write(">");
+    }
+
+    public void PrintPosOrdem()
+    {
+        Console.Write("<");
+        if (SAE != null)
+            SAE.PrintPosOrdem();
+        else
+            Console.Write("<>");        
+
+        if (SAD != null)
+            SAD.PrintPosOrdem();
+        else
+            Console.Write("<>");
+
+        Console.Write(data);
+
+        Console.Write(">");
+    }
+
+    public bool Pertence(int x)
+    {         
         if (data == x)
             return true;
 

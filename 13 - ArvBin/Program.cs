@@ -14,8 +14,15 @@ class Program
                             new Node(7)
                     )
                 );
-        raiz.Print();
+        raiz.PrintIrOrdem();
         Console.WriteLine();
+
+        raiz.PrintPosOrdem();
+        Console.WriteLine();
+
+        raiz.PrintPreOrdem();
+        Console.WriteLine();
+
         Console.WriteLine(raiz.Pertence(7));
         Console.WriteLine(raiz.Pertence(100));
     }

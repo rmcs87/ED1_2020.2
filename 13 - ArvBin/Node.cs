@@ -35,4 +35,17 @@ public class Node
 
         Console.Write(">");
     }
+    public bool Pertence(int x)
+    {
+        if (data == x)
+            return true;
+
+        if (SAE != null && SAE.Pertence(x))
+            return true;
+
+        if (SAD != null && SAD.Pertence(x))
+            return true;
+
+        return false;
+    }
 }

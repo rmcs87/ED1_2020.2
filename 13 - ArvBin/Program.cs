@@ -31,6 +31,16 @@ class Program
 
         Console.WriteLine();
         Console.WriteLine($"# de nós = {raiz.Count()}");
+
+        //1)Tipo de arvore: CHEIA, DEGENARADA, NORMAL
+
+        //2)Contar quantas folhas a árvore
+
+        //3)Contar quantos números pares a árvore tem
+
+        //4)Contar quantos números são menores que um valor X 
+        //(passado por parâmetro
+
     }
 }
 

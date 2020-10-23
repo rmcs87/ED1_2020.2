@@ -85,4 +85,28 @@ public class Node
 
         return false;
     }
+
+    public int Altura()
+    {
+        int he = -1;
+        int hd = -1;
+
+        if (SAE == null && SAD == null)
+            return 0;
+
+        if (SAE != null)
+            he = SAE.Altura();
+        if (SAD != null)
+            hd = SAD.Altura();
+
+        return 1 + Math.Max(he, hd);
+    }
+    
+    //Altura de um valor especifico
+
+    //Tipo da arvore
+    
+    //Contar nós
+
+    //Contar folhas
 }

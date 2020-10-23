@@ -101,6 +101,22 @@ public class Node
 
         return 1 + Math.Max(he, hd);
     }
+
+    public int Count()
+    {
+        int ce = 0;
+        int cd = 0;
+
+        if (SAE == null && SAD == null)
+            return 1;
+
+        if (SAE != null)
+            ce = SAE.Count();
+        if (SAD != null)
+            cd = SAD.Count();
+
+        return 1 + ce + cd;
+    }
     
     //Altura de um valor especifico
 

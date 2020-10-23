@@ -25,6 +25,12 @@ class Program
 
         Console.WriteLine(raiz.Pertence(7));
         Console.WriteLine(raiz.Pertence(100));
+
+        Console.WriteLine();
+        Console.WriteLine($"Altura = {raiz.Altura()}");
+
+        Console.WriteLine();
+        Console.WriteLine($"# de nós = {raiz.Count()}");
     }
 }
 

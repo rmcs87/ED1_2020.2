@@ -19,6 +19,12 @@ public class Node
         SAE = esq;
         SAD = dir;
     }
+   
+    public void Add(int v)
+    {
+
+    }
+    
     public void PrintPreOrdem()
     {
         Console.Write("<");
@@ -36,18 +42,18 @@ public class Node
         Console.Write(">");
     }
 
-    public void PrintIrOrdem()
+    public void PrintInOrder()
     {
         Console.Write("<");        
         if (SAE != null)
-            SAE.PrintIrOrdem();
+            SAE.PrintInOrder();
         else
             Console.Write("<>");
 
         Console.Write(data);
 
         if (SAD != null)
-            SAD.PrintIrOrdem();
+            SAD.PrintInOrder();
         else
             Console.Write("<>");
 

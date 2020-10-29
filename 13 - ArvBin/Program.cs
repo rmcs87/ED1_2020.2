@@ -5,6 +5,7 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Árvore Binária!");
+        Node raiz = new Node(27);
         int op = 0;
         do
         {
@@ -15,8 +16,12 @@ class Program
                 case 0:
                     break;
                 case 1:
+                    Console.WriteLine("Digite o valor do nó:");
+                    int valor = Convert.ToInt32(Console.ReadLine());
+                    raiz.Add(valor);
                     break;
                 case 2:
+                    raiz.PrintInOrder();
                     break;
                 default:
                     Console.WriteLine("opção invalida, tente novamente.");

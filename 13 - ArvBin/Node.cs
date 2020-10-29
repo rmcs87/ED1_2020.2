@@ -118,11 +118,4 @@ public class Node
         return 1 + ce + cd;
     }
     
-    //Altura de um valor especifico
-
-    //Tipo da arvore
-    
-    //Contar nós
-
-    //Contar folhas
 }

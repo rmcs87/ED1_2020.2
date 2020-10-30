@@ -42,12 +42,20 @@ public class Node
     {
         if (data == v)
         {//eu sou o no a ser removido
-            //o no é folha
+        //1) o no é folha
             if (SAE == null && SAD == null)
             {
                 return null;
             }
-            //o no possui 1 filho
+        //2) o no possui 1 filho
+            if(SAE == null)
+            {//só tenho filho a direita
+                return SAD;
+            }
+            if (SAD == null)
+            {//só tenho o filho a esquerda
+                return SAE;
+            }
 
             //o no tem dois filhos
         }

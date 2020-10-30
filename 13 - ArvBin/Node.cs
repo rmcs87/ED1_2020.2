@@ -19,12 +19,55 @@ public class Node
         SAE = esq;
         SAD = dir;
     }
-   
+
     public void Add(int v)
     {
-
+        if (v < data)
+        {
+            if (SAE == null)
+                SAE = new Node(v);
+            else
+                SAE.Add(v);
+        }
+        else
+        {
+            if (SAD == null)
+                SAD = new Node(v);
+            else
+                SAD.Add(v);
+        }
     }
-    
+
+    public Node Remove(int v)
+    {
+        if (data == v)
+        {//eu sou o no a ser removido
+            //o no é folha
+            if (SAE == null && SAD == null)
+            {
+                return null;
+            }
+            //o no possui 1 filho
+
+            //o no tem dois filhos
+        }
+        else
+        {//eu não sou o no a ser removido
+            if (v < data && SAE != null)
+            {//vai remover a minha esquerda
+                SAE = SAE.Remove(v);
+            }
+            else if (v > data && SAD != null)
+            {//vai remover a minha direita
+                SAD = SAD.Remove(v);
+            }
+            else
+            {
+                return this;
+            }
+        }
+    }
+
     public void PrintPreOrdem()
     {
         Console.Write("<");
@@ -44,7 +87,7 @@ public class Node
 
     public void PrintInOrder()
     {
-        Console.Write("<");        
+        Console.Write("<");
         if (SAE != null)
             SAE.PrintInOrder();
         else
@@ -66,7 +109,7 @@ public class Node
         if (SAE != null)
             SAE.PrintPosOrdem();
         else
-            Console.Write("<>");        
+            Console.Write("<>");
 
         if (SAD != null)
             SAD.PrintPosOrdem();
@@ -79,15 +122,16 @@ public class Node
     }
 
     public bool Pertence(int x)
-    {         
+    {
         if (data == x)
             return true;
 
-        if (SAE != null && SAE.Pertence(x))
-            return true;
-
-        if (SAD != null && SAD.Pertence(x))
-            return true;
+        if (x < data)
+            if (SAE != null && SAE.Pertence(x))
+                return true;
+            else
+            if (SAD != null && SAD.Pertence(x))
+                return true;
 
         return false;
     }
@@ -123,5 +167,5 @@ public class Node
 
         return 1 + ce + cd;
     }
-    
+
 }

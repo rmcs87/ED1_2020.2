@@ -42,13 +42,13 @@ public class Node
     {
         if (data == v)
         {//eu sou o no a ser removido
-        //1) o no é folha
+         //1) o no é folha
             if (SAE == null && SAD == null)
             {
                 return null;
             }
-        //2) o no possui 1 filho
-            if(SAE == null)
+            //2) o no possui 1 filho
+            if (SAE == null)
             {//só tenho filho a direita
                 return SAD;
             }
@@ -56,8 +56,16 @@ public class Node
             {//só tenho o filho a esquerda
                 return SAE;
             }
-
-            //o no tem dois filhos
+            //3) o no tem dois filhos
+            Node herdeiro = SAE;
+            while (herdeiro.SAD != null)
+            { 
+                herdeiro = SAD; 
+            }
+            int tempData = herdeiro.data;
+            this.Remove(herdeiro.data);
+            data = tempData;
+            return this;
         }
         else
         {//eu não sou o no a ser removido
@@ -69,11 +77,8 @@ public class Node
             {//vai remover a minha direita
                 SAD = SAD.Remove(v);
             }
-            else
-            {
-                return this;
-            }
-        }
+            return this;
+        }        
     }
 
     public void PrintPreOrdem()

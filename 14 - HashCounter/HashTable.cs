@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 
 public class HashTable
 {
@@ -27,7 +26,9 @@ public class HashTable
     }
     public void PrintReport()
     {
-        foreach (var cell in table)
+        var sorted = table.Where(c => c!= null).ToArray().
+                            OrderBy(item => item.Count);
+        foreach (var cell in sorted)
         {
             if(cell != null)
             {

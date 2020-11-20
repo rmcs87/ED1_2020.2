@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12 - Recursividade", "12 - 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "13 - ArvBin", "13 - ArvBin\13 - ArvBin.csproj", "{D0DF6965-726F-467D-8776-8FD0324D611A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14 - HashCounter", "14 - HashCounter\14 - HashCounter.csproj", "{F70C3809-2255-4927-9EEE-BA60320DB12E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "14 - HashCounter", "14 - HashCounter\14 - HashCounter.csproj", "{F70C3809-2255-4927-9EEE-BA60320DB12E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00 - URI", "00 - URI\00 - URI.csproj", "{1B3C2529-3F92-4BFE-AA91-D85D4BC32D69}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{F70C3809-2255-4927-9EEE-BA60320DB12E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F70C3809-2255-4927-9EEE-BA60320DB12E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F70C3809-2255-4927-9EEE-BA60320DB12E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B3C2529-3F92-4BFE-AA91-D85D4BC32D69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B3C2529-3F92-4BFE-AA91-D85D4BC32D69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B3C2529-3F92-4BFE-AA91-D85D4BC32D69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B3C2529-3F92-4BFE-AA91-D85D4BC32D69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

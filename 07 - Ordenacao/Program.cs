@@ -21,24 +21,17 @@ class Program
 
         Ordenador order = new Ordenador();
 
-        sw.Start();
-        order.SelectionSort(vetor1);
-        sw.Stop();
-        Console.WriteLine($"Selection Sort = {sw.Elapsed.ToString()}");
 
         sw.Start();
         order.Bubblesort(vetor2);
         sw.Stop();
         Console.WriteLine($"Bubble Sort = {sw.Elapsed.ToString()}");
 
+        sw.Reset();
         sw.Start();
-        order.BubblesortV2(vetor2);
+        Ordenador.quickSort(vetor3, 0, vetor3.Length -1);
         sw.Stop();
-        Console.WriteLine($"Bubble Sortv2 = {sw.Elapsed.ToString()}");
+        Console.WriteLine($"Quick Sort = {sw.Elapsed.ToString()}");
 
-        sw.Start();
-        order.InstionSort(vetor2);
-        sw.Stop();
-        Console.WriteLine($"Insertion Sort = {sw.Elapsed.ToString()}");
     }
 }
